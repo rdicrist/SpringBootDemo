@@ -8,3 +8,4 @@ IntelliJ Setup:
 Endpoints:
 - curl "http://localhost:8080"
 - curl "http://localhost:8080/name?name=<NAME>"
+- GraphQl: http://localhost:8080/graphiql
