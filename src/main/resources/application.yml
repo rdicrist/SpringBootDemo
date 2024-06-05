@@ -1,0 +1,16 @@
+spring:
+#  database
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo-app
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+#  graphQl
+  graphql:
+    graphiql:
+      enabled=true:
