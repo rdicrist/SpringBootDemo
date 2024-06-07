@@ -31,5 +31,5 @@ public class GreetingController {
     }
 
     @GetMapping("/name_age")
-    public String helloNameAndAge(@RequestParam("name") String name, @RequestParam("age") String age) { return name+" is "+age+" years old"; }
+    public String helloNameAndAge(@RequestParam("name") String name, @RequestParam("age") String age) { return name+" is "+age+" years old\n"; }
 }
