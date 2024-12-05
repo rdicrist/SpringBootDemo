@@ -17,7 +17,7 @@ public class GreetingController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello!";
+        return "Hello!\n";
     }
 
 //    @GetMapping("/name")
@@ -27,6 +27,9 @@ public class GreetingController {
 
     @GetMapping("/name")
     public String helloName(@RequestParam("name") String name) {
-        return "Hello "+name+"!";
+        return "Hello "+name+"!\n";
     }
+
+    @GetMapping("/name_age")
+    public String helloNameAndAge(@RequestParam("name") String name, @RequestParam("age") String age) { return name+" is "+age+" years old\n"; }
 }
